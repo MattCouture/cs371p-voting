@@ -3,6 +3,7 @@
 #endif
 
 #include <iostream>
+#include <vector>
 
 #include "Voting.h"
 

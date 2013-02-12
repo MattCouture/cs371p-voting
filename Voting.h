@@ -3,12 +3,22 @@
 
 #include <iostream>
 
-bool read(std::istream&, int&);
+using namespace std;
 
-int count(std::istream&);
+void sortVotes(std::istream&, vector<vector<string> >&, vector<int>&, string&);
 
-void print(std::ostream&, String);
+vector<string> findWinners(vector<vector<string> >&, vector<int>&, vector<string>&);
+
+vector<int> determineLosers(vector<int>&);
+
+void reassignVotes(vector<vector<string> >&, vector<int>&);
+
+vector<string> findWinners2(vector<int>&, vector<string>&);
+
+void print(std::ostream&, vector<string>&);
 
 void solve(std::istream&, std::ostream&);
+
+void numElections(std::istream&);
 
 #endif
