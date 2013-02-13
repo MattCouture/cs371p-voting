@@ -5,15 +5,13 @@
 
 using namespace std;
 
-void sortVotes(std::istream&, vector<vector<string> >&, vector<int>&, string&);
-
-vector<string> findWinners(vector<vector<string> >&, vector<int>&, vector<string>&);
-
-void reassignVotes(vector<vector<string> >&, vector<int>&, vector<int>&);
-
 bool checkVote(int&, vector<int>&);
 
-void findWinners2(vector<int>&, vector<string>&, vector<string>&);
+void reassignVotes(vector<int>&, vector<int>&, vector<vector<string> >&, vector<int>&);
+
+bool findWinner(vector<int>&, vector<string>&, vector<int>&, vector<string>&, vector<int>&);
+
+void sortVotes(std::istream&, vector<vector<string> >&, vector<int>&, string&);
 
 void print(std::ostream&, vector<string>&);
 
