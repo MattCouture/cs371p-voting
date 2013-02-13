@@ -9,6 +9,6 @@
 
 int main() {
 	using namespace std;
-	numElections(cin);
+	numElections(cin, cout);
 	return 0; 
 }

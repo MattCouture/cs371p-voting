@@ -17,6 +17,6 @@ void print(std::ostream&, vector<string>&);
 
 void solve(std::istream&, std::ostream&);
 
-void numElections(std::istream&);
+void numElections(std::istream&, std::ostream&);
 
 #endif

@@ -4,6 +4,7 @@
 #include <string>
 #include <sstream>
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "Voting.h"
 
@@ -12,12 +13,10 @@ using namespace std;
 bool checkVote(int& newVote, vector<int>& allLosers) {
   bool bad = false;
   for(vector<int>::size_type i = 0; i < allLosers.size(); ++i) {
-//    cout << "LOSERS: " << allLosers[i] << " ";
     if(allLosers[i] == (newVote-1)) {
       bad = true;
       break;}
   }
-//  cout << endl;
   return bad;
 }
 
@@ -28,27 +27,19 @@ void reassignVotes(vector<int>& voteCount, vector<int>& losers, vector<vector<st
   for(vector<int>::size_type i = 0; i < losers.size(); ++i) {
     loserIndex = losers[i];
     for(vector<vector<string> >::size_type j = 0; j < allVotes[loserIndex].size(); ++j) {
-    //  cout << allVotes[loserIndex].size() << endl;
       stringstream ss (allVotes[loserIndex][j]);
       ss >> newVote;
-    //  cout << "NewVote " << newVote << "  ";
       voteBad = checkVote(newVote, allLosers);
       while(voteBad) {
         ss >> newVote;
-    //    cout << "NewVote " << newVote << "  ";
         voteBad = checkVote(newVote, allLosers);
       }
       getline(ss, restOfVote);
       ++voteCount[newVote-1];
       allVotes[newVote-1].push_back(restOfVote);
-   //   cout << endl;
     }
     voteCount[loserIndex] = 0;
   }
-//   for(vector<int>::size_type i = 0; i < voteCount.size(); ++i) {
-//     cout << voteCount[i] << " ";
-//   }
-//   cout << endl;
 }
 
 bool findWinner(vector<int>& voteCount, vector<string>& winners, vector<int>& losers, vector<string>& candidates, vector<int>& allLosers) {
@@ -64,7 +55,6 @@ bool findWinner(vector<int>& voteCount, vector<string>& winners, vector<int>& lo
       min = voteCount[i];}
   }
   
-//  cout << "Max " << max << "   Min " << min << endl;
   if(max == min) {
     noWinnerExists = false;}
 
@@ -75,7 +65,6 @@ bool findWinner(vector<int>& voteCount, vector<string>& winners, vector<int>& lo
     else if(voteCount[i] == max) {
       winners.push_back(candidates[i]);}
     if(voteCount[i] == min) {
-    //  cout << "Loser" << i+1 << " " << voteCount[i] << endl;
       losers.push_back(i);
       allLosers.push_back(i);}
   }
@@ -100,7 +89,6 @@ void print(std::ostream& w, vector<string>&  winners) {
   for(vector<string>::size_type i = 0; i < winners.size(); ++i) {
     w << winners[i] << "\n";
   }
-  w << endl;
 }
 
 void solve(std::istream& r, std::ostream& w) {
@@ -118,10 +106,6 @@ void solve(std::istream& r, std::ostream& w) {
   string vote;
   vector< vector<string> > allVotes(numCand);
   sortVotes(r, allVotes, voteCount, vote);
-//  for(vector<int>::size_type i = 0; i < voteCount.size(); ++i) {
-//    cout << voteCount[i] << " ";
-//  }
-//  cout << endl;
   vector<string> winners;
   vector<int> losers, allLosers;
   bool noWinnerYet = findWinner(voteCount, winners, losers, candidates, allLosers);
@@ -136,12 +120,13 @@ void solve(std::istream& r, std::ostream& w) {
   candidates.clear();
 }
 
-void numElections(std::istream& r) {
+void numElections(std::istream& r, std::ostream& w) {
   int x;
   r >> x;
   r.ignore();
   for(int y = 0; y < x; ++y) {
     r.ignore();
     solve(r, cout);
+    if(y < x-1){w << "\n";}
   }
 }
