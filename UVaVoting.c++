@@ -6,8 +6,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "Voting.h"
-
 using namespace std;
 
 bool checkVote(int& newVote, vector<int>& allLosers) {
@@ -141,4 +139,16 @@ void numElections(std::istream& r, std::ostream& w) {
     solve(r, cout);
     if(y < x-1){w << '\n';}
   }
+}
+#ifndef ONLINE_JUDGE
+	#define NDEBUG
+#endif
+
+#include <iostream>
+#include <vector>
+
+int main() {
+	using namespace std;
+	numElections(cin, cout);
+	return 0; 
 }
