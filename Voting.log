@@ -1,0 +1,59 @@
+commit 8ebf0139b88525491e0af13cfe6e17ff6b71a0c0
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Thu Feb 14 17:20:58 2013 -0600
+
+    Adding fixed format and UVa submit file
+
+commit d8af02ebb1c5b0c84f875216d7ff2ac97988e767
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Wed Feb 13 17:31:06 2013 -0600
+
+    Adding unit and acceptance tests
+
+commit 37a5e3f16432a615fb4af9eedc390575c61aa671
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Wed Feb 13 17:28:19 2013 -0600
+
+    Update on format
+
+commit 9b43f8db7724b244948e59949a05caa09981929c
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Wed Feb 13 14:29:20 2013 -0600
+
+    Final solution
+
+commit 62f00dda9df36186ca5193d4ca17aec96cc05ab1
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Wed Feb 13 14:28:41 2013 -0600
+
+    Adding acceptance test and output
+
+commit a09a3f36ed0b64fedbefeefeea4f7ef26ef633b3
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Wed Feb 13 00:30:34 2013 -0600
+
+    Update on solution
+
+commit d723bf7af545fc66c8a8b51a71ce77d27c193370
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Tue Feb 12 16:06:36 2013 -0600
+
+    Added acceptance test and partial solution
+
+commit 60919d28649b423b9bc9cf84e0df64ce1bd88eb7
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Sat Feb 9 18:11:03 2013 -0600
+
+    Adding initial three files, no code yet
+
+commit 539e229d975563612452d832b5f8666715ee5725
+Author: Matthew Couture <cs.utexas.edu>
+Date:   Sat Feb 9 14:30:57 2013 -0600
+
+    Added makefile
+
+commit d5389e8ae0af87dbdae39dfd4a55e2dd1998e0bc
+Author: MattCouture <codefelp@gmail.com>
+Date:   Sat Feb 9 12:25:13 2013 -0800
+
+    Initial commit

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['solve',['solve',['../UVaVoting_8c_09_09.html#a703418fe34e18a15d2aee381377f5da5',1,'solve(std::istream &amp;r, std::ostream &amp;w):&#160;UVaVoting.c++'],['../Voting_8c_09_09.html#a703418fe34e18a15d2aee381377f5da5',1,'solve(std::istream &amp;r, std::ostream &amp;w):&#160;Voting.c++'],['../Voting_8h.html#a0c7886fbfd3c0ffea190a722082f0dce',1,'solve(std::istream &amp;, std::ostream &amp;):&#160;UVaVoting.c++']]],
+  ['sortvotes',['sortVotes',['../UVaVoting_8c_09_09.html#ad6622c2e4eb499c5326be219c655056d',1,'sortVotes(std::istream &amp;r, vector&lt; vector&lt; string &gt; &gt; &amp;allVotes, vector&lt; int &gt; &amp;voteCount, string &amp;vote):&#160;UVaVoting.c++'],['../Voting_8c_09_09.html#ad6622c2e4eb499c5326be219c655056d',1,'sortVotes(std::istream &amp;r, vector&lt; vector&lt; string &gt; &gt; &amp;allVotes, vector&lt; int &gt; &amp;voteCount, string &amp;vote):&#160;Voting.c++'],['../Voting_8h.html#a777a7f2b06c0f218ab4fcf2254a10b64',1,'sortVotes(std::istream &amp;, vector&lt; vector&lt; string &gt; &gt; &amp;, vector&lt; int &gt; &amp;, string &amp;):&#160;UVaVoting.c++']]]
+];

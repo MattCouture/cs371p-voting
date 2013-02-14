@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['findwinner',['findWinner',['../UVaVoting_8c_09_09.html#af00133fd8362cbb8f35a01e575593aa6',1,'findWinner(vector&lt; int &gt; &amp;voteCount, vector&lt; string &gt; &amp;winners, vector&lt; int &gt; &amp;losers, vector&lt; string &gt; &amp;candidates, vector&lt; int &gt; &amp;allLosers):&#160;UVaVoting.c++'],['../Voting_8c_09_09.html#af00133fd8362cbb8f35a01e575593aa6',1,'findWinner(vector&lt; int &gt; &amp;voteCount, vector&lt; string &gt; &amp;winners, vector&lt; int &gt; &amp;losers, vector&lt; string &gt; &amp;candidates, vector&lt; int &gt; &amp;allLosers):&#160;Voting.c++'],['../Voting_8h.html#a2102568851c58e9d80ff6a9632bb2177',1,'findWinner(vector&lt; int &gt; &amp;, vector&lt; string &gt; &amp;, vector&lt; int &gt; &amp;, vector&lt; string &gt; &amp;, vector&lt; int &gt; &amp;):&#160;UVaVoting.c++']]]
+];
