@@ -78,6 +78,7 @@ void sortVotes(std::istream& r, vector< vector<string> >& allVotes, vector<int>&
 
   unsigned a;
   r >> a;
+  assert(a > 0);
   
   for(vector<int>::size_type i = a-1; i < a; ++i) {
     ++voteCount[i];
@@ -94,6 +95,7 @@ void sortVotes(std::istream& r, vector< vector<string> >& allVotes, vector<int>&
 }
 
 void print(std::ostream& w, vector<string>&  winners) {
+  assert(!winners.empty());
   for(vector<string>::size_type i = 0; i < winners.size(); ++i) {
     w << winners[i];
     w << '\n';
@@ -103,6 +105,7 @@ void print(std::ostream& w, vector<string>&  winners) {
 void solve(std::istream& r, std::ostream& w) {
   int numCand;
   r >> numCand;
+  assert(numCand > 0);
   r.ignore();
   vector<string> candidates(numCand);
   vector<int> voteCount(numCand);
@@ -135,6 +138,7 @@ void solve(std::istream& r, std::ostream& w) {
 void numElections(std::istream& r, std::ostream& w) {
   int x;
   r >> x;
+  assert(x > 0);
   r.ignore();
   for(int y = 0; y < x; ++y) {
     r.ignore();
